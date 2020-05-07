@@ -1,0 +1,675 @@
+$a:none;
+$width:auto;
+$bcolor:black;
+$wcolor:white;
+// all webpage text align
+*{
+    text-align: center;
+}
+// all images
+img:hover{
+    opacity:0.7 ;
+}
+//specific CSS
+.header{
+    border-bottom:lighten(grey,35);
+    border-style: solid;
+    border-left: $a;
+    border-top: $a;
+    border-right: $a;
+    .heder-nav{
+        background-color: $bcolor;
+        display: block;
+        text-align: center;
+        list-style-type: $a;
+        border: $a;
+        margin: 0;
+        height: 60px;
+        color: $wcolor;
+        box-sizing: inherit;
+        select{
+            background-color: $bcolor;
+            color: $wcolor;
+            border:$a;
+            margin-top: 20px;
+            option{
+                background-color: $wcolor;
+                color: $bcolor;
+                overflow: visible;
+                padding-top: 10px;
+                margin-top: 52px;
+            }
+        }
+        a{
+            margin-top: 20px;
+            text-align: end;
+            color: $wcolor;
+        }
+    }
+    .logo{
+        background-color: $wcolor;
+        .fa-navicon{
+            background-color: transparent;
+            border: $a;
+        }
+        .form-inline{
+            padding-top: 30px;
+            select{
+                width: 170px;
+                color:$bcolor;
+                background-color: lighten(grey,30);
+                border-radius: $a;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                option {
+                    font-weight: normal;
+                    display: block;
+                    white-space: pre;
+                    min-height: 1.2em;
+                    padding: 0px 2px 1px;
+                } 
+            }
+            input {
+                width: 300px;
+                background-color: $wcolor;
+                border-radius: $a;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                border-bottom-left-radius: 0px;
+                border-top-left-radius: 0px;
+            }
+            .btn-danger{
+                border-bottom-left-radius: 0px;
+                border-top-left-radius: 0px;
+            } 
+        }
+        .btn-success{
+            padding-top: 30px;
+            background-color: transparent;
+            color: $bcolor;
+            border: $a;            
+        }
+    }
+    .toggle{
+        display: none;
+    }
+    .menu {
+        color: $bcolor;
+        background-color: $wcolor;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        height: 60px;
+        padding: 10px;
+        display: flex;
+        box-sizing: inherit;
+        width: 100%;
+        .container .row div{
+            padding: 5px;
+            select{
+                background-color: transparent;
+                border: $a;
+                color: $bcolor;
+            }
+        } 
+    }
+}
+
+.slidebar{
+    .categories{
+        text-align: left;
+        padding-left:30px;
+        h5{
+          text-align: left;
+          a{
+            color: red;
+          }  
+        }
+        h4{
+            text-align: left;
+        }
+        select{
+            border: $a;
+
+        }
+    }
+    .flex{
+        position: relative;
+        text-align: center;
+        color: $wcolor;
+        img {
+            height: 100%;
+            width: 100%;
+            padding: $a;
+        }
+        .text{
+            position: absolute;
+            top: 70px;
+            right: 16px;
+        }
+    }
+    .social-icon{
+        button{
+            border-radius: 7px;
+            float:right;
+            position: fixed;
+            z-index: 1;
+        }
+        .fa{
+            padding: 6px;
+            font-size: 15px;
+            width: 50px;
+            text-align: center;
+            text-decoration: $a;
+            margin: 0px 0px 0px 120px;
+            border: none;
+            border-bottom-left-radius: 0px;
+            border-top-left-radius: 0px;
+            border-bottom-right-radius: 0px !important;
+            border-top-right-radius: 0px !important;
+            a{
+                display: $a;
+            }
+        }
+        .fa:hover{
+            padding: 6px;
+            font-size: 15px;
+            width: 100px;
+            text-align: center;
+            text-decoration: $a;
+            margin: 0px 60px;
+            opacity: 1;
+            a{
+                display: inline-block;
+            }
+        }
+        .fa-facebook{
+            background: rgb(14, 32, 70);
+            color: $wcolor;
+        }
+        .fa-twitter{
+            background: rgb(42, 194, 221);
+            color: $wcolor;
+        }
+        .fa-youtube{
+            background: #bb0000;
+            color: $wcolor;
+        }
+        .fa-google-plus{
+            background: red;
+            color: $wcolor;
+        }
+        .fa-instagram{
+            background: #f40083;
+            color: $wcolor;
+        }
+    }
+}
+
+.filterContain{
+    .progress-bar{
+        background-color: red;
+    }
+    .row{
+        padding-left: 10px;
+        div{
+            h5{
+                text-align: left;
+            }
+            .filter{
+                border: lighten(grey,35);
+                border-style: solid;
+                padding: 10px;
+                border-radius:5px;
+                h6{
+                    text-align: left;
+                    padding: 10px;
+                }
+                .custom-range::-webkit-slider-thumb{
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background: red;
+                    cursor: pointer;
+                }
+                .btn-dark{
+                    float: left;
+                }
+                .btn-danger-checked{
+                    background-color: $wcolor;
+                    border: lighten($bcolor,35);
+                }
+                .btn-danger-checked:hover{
+                    background-color: rgb(241, 13, 13);
+                    color: $wcolor;
+                }
+                .fa-dot-circle-o:hover{
+                    font-size:17px;
+                    opacity: 0.9;
+                }
+            }
+            .compare{
+                text-align: left;
+                h6{
+                    text-align: left;
+                }
+                .img{
+                    width: auto;
+                    height: 100%;
+                }
+            }
+            .latest{
+                h6{
+                    text-align: left;
+                }
+                .row{
+                    img{
+                        height: 70px;
+                        width: 40px;
+                        padding: $a;
+                    }
+                    h5{
+                        text-align: left;
+                    }
+                    h6{
+                        text-align: left;
+                        b{
+                            color: red;
+                        }
+                    }
+                }
+            }
+            .Sorting{
+                border: $a;
+                .Sorting-button{
+                    button{
+                        border-radius: 5px;
+                        width: 80px;
+                        height: 40px;
+                    }
+                    button:hover{
+                        background-color: red;
+                        color: $wcolor;
+                    }
+                    select{
+                        border: $a;
+                        background-color: lighten(grey,40);
+                        border-radius: 5px;
+                        width: $width;
+                        height: 40px;
+                    }
+                    select:hover{
+                        background-color:red;
+                        color: $wcolor;   
+                    }
+                }
+                .show{
+                    h5{
+                        b{
+                            color: red;
+                        }
+                    }
+                }
+            }
+            .product{
+                border: lighten(grey,35);
+                border-style: solid;
+                border-radius:10px;
+                padding: 10px;
+                margin-right: 10px;
+                img{
+                    width: auto;
+                    height: 50%;
+                    margin-top: 100px;
+                    text-align: center;
+                    display: table-cell;
+                }
+                .info{
+                    text-align: left;
+                    h6,h3,p{
+                        text-align: left;
+                    }
+                    .checked{
+                        color: orange;
+                    }
+                    .vl {
+                        border-left: 2px solid gray;
+                        height: 8px;
+                    }
+                    button{
+                        width: $width;
+                        height: 40px;
+                    }
+                    button:hover{
+                        background-color:red;
+                        border: $a;
+                    }
+                }
+            }
+            .page-pagination{
+                .page-link{
+                    border-radius: 6px;
+                    margin: 5px;
+                }
+                .page-link:hover{
+                    background-color: red;
+                    color: $wcolor;
+                }
+                h5{
+                    padding-top: 10px;
+                    b{
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.subscribe{
+    background: #b11e22 $a repeat scroll 0 0;
+    padding: 30px 0;
+    text-align: center;
+    display: block;
+    h6{
+        color: $wcolor;
+        b{
+            font-size: 25px;
+        }
+    }
+    h6:hover{
+        color: $bcolor;
+    }
+    .form-control{
+        width: 280px;
+        padding: $a;
+        border-bottom-left-radius: 18px;
+        border-top-left-radius: 18px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .btn-dark{
+        width: 120px;
+        padding: $a;
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+        // font-size: 50%;
+    }
+}
+
+.footer{
+    img{
+        text-align: left;
+        display: block;
+    }
+    p{
+        text-align: left !important;
+        display: block;
+    }
+    .cont{
+        b{
+            text-align: left;
+            display: block;
+        }
+    }
+    a{
+        color: $bcolor;
+    }
+    
+    a:hover{
+        color: red;
+        text-decoration: $a;
+    }
+    .saleon{
+        b{
+            text-align: left;
+            display: block;
+        }
+        .sale-on{
+            img{
+                height: 90px;
+                width: 60px;
+                padding: 5px;
+                border: lighten(grey,40);
+                border-style: solid;
+                border-radius:1px; 
+                // margin: 10px;
+            }
+            h5{
+                text-align: left;
+            }
+            h6{
+                color: grey;
+                text-align: left;
+                b{
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+.end{
+    b{
+        color: red; 
+    }
+    .fa-cc-mastercard{
+        color: red;
+    }
+    .fa-cc-visa{
+        color: blue;
+    }
+    .fa-cc-discover{
+        color: purple;
+    }
+    .fa-credit-card{
+        color: rgb(28, 26, 63);
+    }
+    .fa-cc-amex{
+        color: rgb(218, 116, 175);
+    }
+    .fa-cc-paypal{
+        color: rgb(41, 116, 202);
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media(max-width: 767px) { 
+    .header{
+        .heder-nav{
+            display: $a;
+        }
+        .logo{
+            img{
+                height: 50px;
+            }
+            .form-inline{
+                select{
+                    width:70px;
+                    height: 38px;
+                }
+                input{
+                    width: 100px;
+                }
+                button{
+                    font-size: smaller;
+                    height: 38px;
+                    margin-bottom: 16px;
+                }
+            }
+            b{
+                display: none;
+            }
+        }
+        .toggle{
+            display: flex;
+        }
+        .menu{
+            z-index: 1;
+            background-color:pink;
+            display:relative;
+            overflow: hidden;
+            color: black;
+            top: 0;
+            width: 100%;
+        }
+        .menu:not(.show) {
+            display: none;
+            text-align: left !important;
+        }        
+    }
+    .slidebar{
+        
+        .categories{
+            z-index: -1;
+        }
+        .flex{
+            margin-top: 10px;
+            margin-left: 10px;
+            img {
+                height: 100%;
+                width: 100%;
+                padding: $a;
+            }
+            .text{
+                font-size: xx-small;
+                top: 30px;
+                right: 50px;
+            }
+        }
+        .social-icon{
+            display: $a;
+        }
+    }
+    .filterContain{
+        .compare{
+            display: none;
+        }
+        .latest{
+            display: none;
+        }
+        .Sorting{
+            .show{
+                h5{
+                    text-align: center;
+                    // padding-left: 20px;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .product{
+            margin-left: 10px;
+        }
+        .page-pagination{
+            text-align: center;
+            padding-left: 40px;
+        } 
+        .aninfo{
+            display: none;
+        }       
+    }    
+    .subscribe{
+        .form-control{
+            width: 210px !important;
+        }
+        .btn-dark{
+            width: 140px !important;
+        }
+    }
+    .footer{
+        text-align: center !important;
+        .saleon{
+            display: none;
+        }
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) { 
+    header{
+        .heder-nav{
+            select{
+                display: $a;
+            }
+        }
+        .logo{
+           
+            img{
+                height: 70px;
+            }
+            .form-inline{
+                padding-top: 3px !important;
+                select{
+                    width:80px !important;
+                }
+                input{
+                    width: 120px !important;
+                }
+                .btn-success{
+                    b{
+                        display: $a;
+                    }
+                }
+            }
+            
+        }
+    }
+    .slidebar{
+        .col-sm-3{
+            text-align: left;
+        }
+        .col-sm-6{
+            .flex{
+                img{
+                    width: $width !important;
+                    height: 300px !important;
+                }
+            }
+        }
+    }
+    .filterContain{
+        .compare{
+            img{
+                width: 160px !important;
+                margin: 10px;
+            }
+        }
+        .latest{
+            img{
+                height: 50px !important;
+                width: 30px !important;
+            }
+        }
+        .Sorting{
+            .fa-delicious{
+                width: 50px !important;
+            }
+            .fa-navicon{
+                width: 50px !important;
+            }
+        }
+    }
+    
+    .subscribe{
+        .form-control{
+            width: 130px !important;
+        }
+        .btn-dark{
+            width: 100px !important;
+            font-size: small !important;
+        }
+    }
+    .footer{
+        .saleon{
+            .col-sm-8{
+                font-size: xx-small;
+            }
+        }
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {  }

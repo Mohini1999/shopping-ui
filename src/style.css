@@ -1,0 +1,677 @@
+* {
+  text-align: center;
+}
+
+img:hover {
+  opacity: 0.7;
+}
+
+.header {
+  border-bottom: #d9d9d9;
+  border-style: solid;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+}
+
+.header .heder-nav {
+  background-color: black;
+  display: block;
+  text-align: center;
+  list-style-type: none;
+  border: none;
+  margin: 0;
+  height: 60px;
+  color: white;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.header .heder-nav select {
+  background-color: black;
+  color: white;
+  border: none;
+  margin-top: 20px;
+}
+
+.header .heder-nav select option {
+  background-color: white;
+  color: black;
+  overflow: visible;
+  padding-top: 10px;
+  margin-top: 52px;
+}
+
+.header .heder-nav a {
+  margin-top: 20px;
+  text-align: end;
+  color: white;
+}
+
+.header .logo {
+  background-color: white;
+}
+
+.header .logo .fa-navicon {
+  background-color: transparent;
+  border: none;
+}
+
+.header .logo .form-inline {
+  padding-top: 30px;
+}
+
+.header .logo .form-inline select {
+  width: 170px;
+  color: black;
+  background-color: #cdcdcd;
+  border-radius: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.header .logo .form-inline select option {
+  font-weight: normal;
+  display: block;
+  white-space: pre;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+
+.header .logo .form-inline input {
+  width: 300px;
+  background-color: white;
+  border-radius: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.header .logo .form-inline .btn-danger {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.header .logo .btn-success {
+  padding-top: 30px;
+  background-color: transparent;
+  color: black;
+  border: none;
+}
+
+.header .toggle {
+  display: none;
+}
+
+.header .menu {
+  color: black;
+  background-color: white;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 60px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  width: 100%;
+}
+
+.header .menu .container .row div {
+  padding: 5px;
+}
+
+.header .menu .container .row div select {
+  background-color: transparent;
+  border: none;
+  color: black;
+}
+
+.slidebar .categories {
+  text-align: left;
+  padding-left: 30px;
+}
+
+.slidebar .categories h5 {
+  text-align: left;
+}
+
+.slidebar .categories h5 a {
+  color: red;
+}
+
+.slidebar .categories h4 {
+  text-align: left;
+}
+
+.slidebar .categories select {
+  border: none;
+}
+
+.slidebar .flex {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.slidebar .flex img {
+  height: 100%;
+  width: 100%;
+  padding: none;
+}
+
+.slidebar .flex .text {
+  position: absolute;
+  top: 70px;
+  right: 16px;
+}
+
+.slidebar .social-icon button {
+  border-radius: 7px;
+  float: right;
+  position: fixed;
+  z-index: 1;
+}
+
+.slidebar .social-icon .fa {
+  padding: 6px;
+  font-size: 15px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 0px 0px 120px;
+  border: none;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+
+.slidebar .social-icon .fa a {
+  display: none;
+}
+
+.slidebar .social-icon .fa:hover {
+  padding: 6px;
+  font-size: 15px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 60px;
+  opacity: 1;
+}
+
+.slidebar .social-icon .fa:hover a {
+  display: inline-block;
+}
+
+.slidebar .social-icon .fa-facebook {
+  background: #0e2046;
+  color: white;
+}
+
+.slidebar .social-icon .fa-twitter {
+  background: #2ac2dd;
+  color: white;
+}
+
+.slidebar .social-icon .fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.slidebar .social-icon .fa-google-plus {
+  background: red;
+  color: white;
+}
+
+.slidebar .social-icon .fa-instagram {
+  background: #f40083;
+  color: white;
+}
+
+.filterContain .progress-bar {
+  background-color: red;
+}
+
+.filterContain .row {
+  padding-left: 10px;
+}
+
+.filterContain .row div h5 {
+  text-align: left;
+}
+
+.filterContain .row div .filter {
+  border: #d9d9d9;
+  border-style: solid;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.filterContain .row div .filter h6 {
+  text-align: left;
+  padding: 10px;
+}
+
+.filterContain .row div .filter .custom-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: red;
+  cursor: pointer;
+}
+
+.filterContain .row div .filter .btn-dark {
+  float: left;
+}
+
+.filterContain .row div .filter .btn-danger-checked {
+  background-color: white;
+  border: #595959;
+}
+
+.filterContain .row div .filter .btn-danger-checked:hover {
+  background-color: #f10d0d;
+  color: white;
+}
+
+.filterContain .row div .filter .fa-dot-circle-o:hover {
+  font-size: 17px;
+  opacity: 0.9;
+}
+
+.filterContain .row div .compare {
+  text-align: left;
+}
+
+.filterContain .row div .compare h6 {
+  text-align: left;
+}
+
+.filterContain .row div .compare .img {
+  width: auto;
+  height: 100%;
+}
+
+.filterContain .row div .latest h6 {
+  text-align: left;
+}
+
+.filterContain .row div .latest .row img {
+  height: 70px;
+  width: 40px;
+  padding: none;
+}
+
+.filterContain .row div .latest .row h5 {
+  text-align: left;
+}
+
+.filterContain .row div .latest .row h6 {
+  text-align: left;
+}
+
+.filterContain .row div .latest .row h6 b {
+  color: red;
+}
+
+.filterContain .row div .Sorting {
+  border: none;
+}
+
+.filterContain .row div .Sorting .Sorting-button button {
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+}
+
+.filterContain .row div .Sorting .Sorting-button button:hover {
+  background-color: red;
+  color: white;
+}
+
+.filterContain .row div .Sorting .Sorting-button select {
+  border: none;
+  background-color: #e6e6e6;
+  border-radius: 5px;
+  width: auto;
+  height: 40px;
+}
+
+.filterContain .row div .Sorting .Sorting-button select:hover {
+  background-color: red;
+  color: white;
+}
+
+.filterContain .row div .Sorting .show h5 b {
+  color: red;
+}
+
+.filterContain .row div .product {
+  border: #d9d9d9;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.filterContain .row div .product img {
+  width: auto;
+  height: 50%;
+  margin-top: 100px;
+  text-align: center;
+  display: table-cell;
+}
+
+.filterContain .row div .product .info {
+  text-align: left;
+}
+
+.filterContain .row div .product .info h6, .filterContain .row div .product .info h3, .filterContain .row div .product .info p {
+  text-align: left;
+}
+
+.filterContain .row div .product .info .checked {
+  color: orange;
+}
+
+.filterContain .row div .product .info .vl {
+  border-left: 2px solid gray;
+  height: 8px;
+}
+
+.filterContain .row div .product .info button {
+  width: auto;
+  height: 40px;
+}
+
+.filterContain .row div .product .info button:hover {
+  background-color: red;
+  border: none;
+}
+
+.filterContain .row div .page-pagination .page-link {
+  border-radius: 6px;
+  margin: 5px;
+}
+
+.filterContain .row div .page-pagination .page-link:hover {
+  background-color: red;
+  color: white;
+}
+
+.filterContain .row div .page-pagination h5 {
+  padding-top: 10px;
+}
+
+.filterContain .row div .page-pagination h5 b {
+  color: red;
+}
+
+.subscribe {
+  background: #b11e22 none repeat scroll 0 0;
+  padding: 30px 0;
+  text-align: center;
+  display: block;
+}
+
+.subscribe h6 {
+  color: white;
+}
+
+.subscribe h6 b {
+  font-size: 25px;
+}
+
+.subscribe h6:hover {
+  color: black;
+}
+
+.subscribe .form-control {
+  width: 280px;
+  padding: none;
+  border-bottom-left-radius: 18px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.subscribe .btn-dark {
+  width: 120px;
+  padding: none;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.footer img {
+  text-align: left;
+  display: block;
+}
+
+.footer p {
+  text-align: left !important;
+  display: block;
+}
+
+.footer .cont b {
+  text-align: left;
+  display: block;
+}
+
+.footer a {
+  color: black;
+}
+
+.footer a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.footer .saleon b {
+  text-align: left;
+  display: block;
+}
+
+.footer .saleon .sale-on img {
+  height: 90px;
+  width: 60px;
+  padding: 5px;
+  border: #e6e6e6;
+  border-style: solid;
+  border-radius: 1px;
+}
+
+.footer .saleon .sale-on h5 {
+  text-align: left;
+}
+
+.footer .saleon .sale-on h6 {
+  color: grey;
+  text-align: left;
+}
+
+.footer .saleon .sale-on h6 b {
+  color: red;
+}
+
+.end b {
+  color: red;
+}
+
+.end .fa-cc-mastercard {
+  color: red;
+}
+
+.end .fa-cc-visa {
+  color: blue;
+}
+
+.end .fa-cc-discover {
+  color: purple;
+}
+
+.end .fa-credit-card {
+  color: #1c1a3f;
+}
+
+.end .fa-cc-amex {
+  color: #da74af;
+}
+
+.end .fa-cc-paypal {
+  color: #2974ca;
+}
+
+@media (max-width: 767px) {
+  .header .heder-nav {
+    display: none;
+  }
+  .header .logo img {
+    height: 50px;
+  }
+  .header .logo .form-inline select {
+    width: 70px;
+    height: 38px;
+  }
+  .header .logo .form-inline input {
+    width: 100px;
+  }
+  .header .logo .form-inline button {
+    font-size: smaller;
+    height: 38px;
+    margin-bottom: 16px;
+  }
+  .header .logo b {
+    display: none;
+  }
+  .header .toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .menu {
+    z-index: 1;
+    background-color: pink;
+    display: relative;
+    overflow: hidden;
+    color: black;
+    top: 0;
+    width: 100%;
+  }
+  .header .menu:not(.show) {
+    display: none;
+    text-align: left !important;
+  }
+  .slidebar .categories {
+    z-index: -1;
+  }
+  .slidebar .flex {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .slidebar .flex img {
+    height: 100%;
+    width: 100%;
+    padding: none;
+  }
+  .slidebar .flex .text {
+    font-size: xx-small;
+    top: 30px;
+    right: 50px;
+  }
+  .slidebar .social-icon {
+    display: none;
+  }
+  .filterContain .compare {
+    display: none;
+  }
+  .filterContain .latest {
+    display: none;
+  }
+  .filterContain .Sorting .show h5 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .filterContain .product {
+    margin-left: 10px;
+  }
+  .filterContain .page-pagination {
+    text-align: center;
+    padding-left: 40px;
+  }
+  .filterContain .aninfo {
+    display: none;
+  }
+  .subscribe .form-control {
+    width: 210px !important;
+  }
+  .subscribe .btn-dark {
+    width: 140px !important;
+  }
+  .footer {
+    text-align: center !important;
+  }
+  .footer .saleon {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  header .heder-nav select {
+    display: none;
+  }
+  header .logo img {
+    height: 70px;
+  }
+  header .logo .form-inline {
+    padding-top: 3px !important;
+  }
+  header .logo .form-inline select {
+    width: 80px !important;
+  }
+  header .logo .form-inline input {
+    width: 120px !important;
+  }
+  header .logo .form-inline .btn-success b {
+    display: none;
+  }
+  .slidebar .col-sm-3 {
+    text-align: left;
+  }
+  .slidebar .col-sm-6 .flex img {
+    width: auto !important;
+    height: 300px !important;
+  }
+  .filterContain .compare img {
+    width: 160px !important;
+    margin: 10px;
+  }
+  .filterContain .latest img {
+    height: 50px !important;
+    width: 30px !important;
+  }
+  .filterContain .Sorting .fa-delicious {
+    width: 50px !important;
+  }
+  .filterContain .Sorting .fa-navicon {
+    width: 50px !important;
+  }
+  .subscribe .form-control {
+    width: 130px !important;
+  }
+  .subscribe .btn-dark {
+    width: 100px !important;
+    font-size: small !important;
+  }
+  .footer .saleon .col-sm-8 {
+    font-size: xx-small;
+  }
+}
+/*# sourceMappingURL=style.css.map */
